@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Konversi Bilangan</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="body">
+<div>
+<h1 class="judul">Konversi Bilangan</h1>
+<div class="bodykonverter">
+    <div class="group1">
+        <label for="base">Pilih basis bilangan asal</label>
+        <select id="base" name="base">
+            <option value="binary">Binary</option>
+            <option value="octal" selected>Octal</option>
+            <option value="decimal">Decimal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+        </select>
+    </div>
+    <div class="group2">
+        <label for="number">Masukkan Bilangan</label>
+        <input type="text" id="input-number" placeholder="Enter number">
+        <button onclick="convertNumber()">Convert</button>
+    </div>
+    <div class="tombol1">
+        
+    </div>
+</div>
+<div class="hasil">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Hasil Converted</h5>
+      </div>
+      <div class="card-body">
+        <p id="decimalOutput" class="card-text">Decimal: 0</p>
+        <p id="binaryOutput" class="card-text">Binary: 0</p>
+        <p id="octalOutput" class="card-text">Octal: 0</p>
+        <p id="hexadecimalOutput" class="card-text">Hexadecimal: 0</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+    <button class="reset" onclick="resetForm()">Reset</button>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
